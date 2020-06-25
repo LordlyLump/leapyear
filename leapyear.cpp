@@ -72,16 +72,16 @@ const int four{4}, hundred{100}, fourhundred{400};
 
 // 1900 should return false (divisible by 100) HOMEWORK
    if ( (1900 % four == 0) && (!(1900 % hundred == 0) || (1900 % fourhundred == 0)) ) {
-      ( false ) && (!(false) || (false)
-      ( false ) && ((true) || (false)
-      (false) && (true)
-      (false)
+   if ( (false) && (!(true) || (false)) )
+   if ( (false) && ((false || (false) )
+   if ( (false) && (false) )
+   if ( (false) )
 // 2000 should return true (divisible by 400) HOMEWORK
    if ( (2000 % four == 0) && (!(2000 % hundred == 0) || (2000 % fourhundred == 0)) ) {
-     (true) && ((false) || (true))
-     (true) && ((true) || (true))
-     (true) && (true)
-     (true)
+   if ( (true) && (!(true) || (true)) )
+   if ( (true) && ((false) || (true)) )
+   if ( (true) && (true) )
+   if ( (true) )
 // next lesson: we will describe this same calculation (logical) as MP and MT
    
    return true;
