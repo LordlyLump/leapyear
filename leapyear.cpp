@@ -27,7 +27,8 @@ const int four{4}, hundred{100}, fourhundred{400};
     // division : 1902 / 4 = 475 (the result of division)
     // modulus : 1900 % 4 = 2 (the remainder of the division)
 
-   if ( (year % four == 0) && (!(year % hundred == 0) || (year % fourhundred == 0)) ) {
+   if ( (year % four == 0) && (
+       (year % hundred != 0) || (year % fourhundred == 0)) ) {
 
 // 0 / 4 = 0 ; 0 % 4 = 0 (0x4 + 0 = 0)
 // 1 / 4 = 0 ; 1 % 4 = 1 (0x4 + 1 = 1)
@@ -38,7 +39,7 @@ const int four{4}, hundred{100}, fourhundred{400};
 // 6 / 4 = 1 ; 6 % 4 = 2 (1x4 + 2 = 6)
 // 7 / 4 = 1 ; 7 % 4 = 3 (1x4 + 3 = 7)
 // 8 / 4 = 2 ; 8 % 4 = 0 (2x4 + 0 = 8)
-// 9 / 4 = 2 ; 9 % 4 = 0 (2x4 + 1 = 9)
+// 9 / 4 = 2 ; 9 % 4 = 1 (2x4 + 1 = 9)
 
 // 5 / 3 = 1 ; 5 % 3 = 2 (1x3 + 2 = 5)
 // 6 / 3 = 2 ; 6 % 3 = 0 
@@ -71,10 +72,16 @@ const int four{4}, hundred{100}, fourhundred{400};
 
 // 1900 should return false (divisible by 100) HOMEWORK
    if ( (1900 % four == 0) && (!(1900 % hundred == 0) || (1900 % fourhundred == 0)) ) {
-
+      ( false ) && (!(false) || (false)
+      ( false ) && ((true) || (false)
+      (false) && (true)
+      (false)
 // 2000 should return true (divisible by 400) HOMEWORK
    if ( (2000 % four == 0) && (!(2000 % hundred == 0) || (2000 % fourhundred == 0)) ) {
-
+     (true) && ((false) || (true))
+     (true) && ((true) || (true))
+     (true) && (true)
+     (true)
 // next lesson: we will describe this same calculation (logical) as MP and MT
    
    return true;
