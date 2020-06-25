@@ -62,26 +62,26 @@ const int four{4}, hundred{100}, fourhundred{400};
 //10  2
 
 
-// 2020 should return true (divisible by 4) ** CORRECT
-   if ( (2020 % four == 0) && (!(2020 % hundred == 0) || (2020 % fourhundred == 0)) ) {
-   if ( (true) && (!(false) || (false)) ) 
-   if ( (true) && (true || (false)) ) 
-   if ( (true) && (true) ) 
-   if ( (true) ) 
-// the result of dividing 2020 into 4 is 505; 505 x 4 = 2020 (no remainder)
+// // 2020 should return true (divisible by 4) ** CORRECT
+//    if ( (2020 % four == 0) && (!(2020 % hundred == 0) || (2020 % fourhundred == 0)) ) {
+//    if ( (true) && (!(false) || (false)) ) 
+//    if ( (true) && (true || (false)) ) 
+//    if ( (true) && (true) ) 
+//    if ( (true) ) 
+// // the result of dividing 2020 into 4 is 505; 505 x 4 = 2020 (no remainder)
 
-// 1900 should return false (divisible by 100) HOMEWORK
-   if ( (1900 % four == 0) && (!(1900 % hundred == 0) || (1900 % fourhundred == 0)) ) {
-   if ( (false) && (!(true) || (false)) )
-   if ( (false) && ((false || (false) )
-   if ( (false) && (false) )
-   if ( (false) )
-// 2000 should return true (divisible by 400) HOMEWORK
-   if ( (2000 % four == 0) && (!(2000 % hundred == 0) || (2000 % fourhundred == 0)) ) {
-   if ( (true) && (!(true) || (true)) )
-   if ( (true) && ((false) || (true)) )
-   if ( (true) && (true) )
-   if ( (true) )
+// // 1900 should return false (divisible by 100) HOMEWORK
+//    if ( (1900 % four == 0) && (!(1900 % hundred == 0) || (1900 % fourhundred == 0)) ) {
+//    if ( (true) && (!(true) || (false)) )
+//    if ( (true) && ((false || (false) )
+//    if ( (true) && (false) )
+//    if ( (false) )
+// // 2000 should return true (divisible by 400) HOMEWORK
+//    if ( (2000 % four == 0) && (!(2000 % hundred == 0) || (2000 % fourhundred == 0)) ) {
+//    if ( (true) && (!(true) || (true)) )
+//    if ( (true) && ((false) || (true)) )
+//    if ( (true) && (true) )
+//    if ( (true) )
 // next lesson: we will describe this same calculation (logical) as MP and MT
    
    return true;
